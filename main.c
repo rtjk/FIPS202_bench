@@ -36,6 +36,8 @@ int main() {
         uint8_t in[inlen];
         uint8_t out[outlen];
 
+        memset(out, 0, outlen);
+
         u8_arr_rand(in, inlen);
 
         count_1 = cpucycles();
