@@ -33,6 +33,10 @@ mkdir FIPS202
 # mv XKCP/bin/.pack/FIPS202-compact/* FIPS202
 mv XKCP/bin/.pack/FIPS202-opt64/* FIPS202 # optimized
 
+# remove unnecessary files
+rm -rf FIPS202/SnP-implementations.c
+rm -rf FIPS202/SnP-implementations.h
+
 # add "#pragma once" to all header files
 for file in FIPS202/*.h; do
     { echo "#pragma once"; echo; cat "$file"; } > temp && mv temp "$file"
