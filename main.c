@@ -27,7 +27,7 @@ int main() {
     uint64_t count_1, count_2, avg;
     uint64_t sum = 0;
 
-    uint8_t checksum;
+    uint8_t checksum = 0;
 
     for(uint64_t test = 0; test < TESTS; test++) {
 
